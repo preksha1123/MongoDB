@@ -265,25 +265,25 @@ Windows PowerShell
 Copyright (C) Microsoft Corporation. All rights reserved.
 
 PS C:\WINDOWS\system32> cd C:\Users\ff\JavaMongoDB\mongodb-demo
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = "mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user"
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = "mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username ."
 At line:1 char:30
 + ... = "mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion ...
 +                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Unexpected token 'mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1
---username 2024pceacspreksha126_db_user"' in expression or statement.
+--username ."' in expression or statement.
     + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordExce
    ption
     + FullyQualifiedErrorId : UnexpectedToken
 
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username .
 Enter password: *
 MongoServerError: bad auth : authentication failed
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username .
 Enter password: *
 MongoServerError: bad auth : authentication failed
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> i97MZ&tw@ev2Vt7
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> .
 At line:1 char:6
-+ i97MZ&tw@ev2Vt7
++ .
 +      ~
 The ampersand (&) character is not allowed. The & operator is reserved for
 future use; wrap an ampersand in double quotation marks ("&") to pass it as part
@@ -292,28 +292,28 @@ of a string.
    ption
     + FullyQualifiedErrorId : AmpersandNotAllowed
 
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> i97MZ%26tw%40ev2Vt7
-i97MZ%26tw%40ev2Vt7 : The term 'i97MZ%26tw%40ev2Vt7' is not recognized as the
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> .
+. : The term '.' is not recognized as the
 name of a cmdlet, function, script file, or operable program. Check the spelling
 of the name, or if a path was included, verify that the path is correct and try
 again.
 At line:1 char:1
-+ i97MZ%26tw%40ev2Vt7
++ .
 + ~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (i97MZ%26tw%40ev2Vt7:String) [], C
+    + CategoryInfo          : ObjectNotFound: (.:String) [], C
    ommandNotFoundException
     + FullyQualifiedErrorId : CommandNotFoundException
 
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username .
 Enter password: *******************
 MongoServerError: bad auth : authentication failed
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username .
 Enter password: *******************
 MongoServerError: bad auth : authentication failed
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username .
 Enter password: *******************
 MongoServerError: bad auth : authentication failed
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = "mongodb+srv://2024pceacspreksha126_db_user:i97MZ%26tw%40ev2Vt7@cluster0.35fwt2e.mongodb.net/"
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = "mongodb+srv://.:.@cluster0.35fwt2e.mongodb.net/"
 PS C:\Users\ff\JavaMongoDB\mongodb-demo> if ($env:MONGODB_URI) { "Connection URI is set" } else { "Connection URI is missing" }
 Connection URI is set
 PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn compile exec:java "-Dexec.mainClass=com.example.App"
@@ -709,6 +709,5 @@ java.lang.IllegalThreadStateException
 [INFO] Finished at: 2026-10-15T08:38:04+05:30
 [INFO] ------------------------------------------------------------------------
 PS C:\Users\ff\JavaMongoDB\mongodb-demo>
-
 
 
